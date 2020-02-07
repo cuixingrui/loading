@@ -45,7 +45,8 @@ class BallPulseIndicator extends Indicator {
 
   @override
   void startAnim(AnimationController controller) {
-    controller.repeat(reverse: true);
+    //controller.repeat(reverse: true);
+    if (context.mounted) controllers[i].repeat(reverse: true);
   }
 
   @override
